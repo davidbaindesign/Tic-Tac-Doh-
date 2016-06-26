@@ -1,0 +1,39 @@
+<!doctype html>
+
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tic Tac Doh! App</title>
+<link href='ticTacDoh.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<audio id="myAudio">
+  <source src="http://www.drodd.com/simpsons-sounds/doh1.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="myAudio2">
+  <source src="http://www.richmolnar.com/Sounds/Homer%20-%20Woohoo!%20(1).wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="container">
+<canvas id="00" onclick="drawing(this)" class="square borderB borderR" height="200px" width="200px"></canvas>
+<canvas id="10" onclick="drawing(this)" class="square borderL borderR borderB" height="200px" width="200px"></canvas>
+<canvas id="20" onclick="drawing(this)" class="square borderL borderB" height="200px" width="200px"></canvas>
+<canvas id="01" onclick="drawing(this)" class="square borderT borderR borderB" height="200px" width="200px"></canvas>
+<canvas id="11" onclick="drawing(this)" class="square borderL borderR borderT borderB" height="200px" width="200px"></canvas>
+<canvas id="21" onclick="drawing(this)" class="square borderL borderT borderB" height="200px" width="200px"></canvas>
+<canvas id="02" onclick="drawing(this)" class="square borderR borderT" height="200px" width="200px"></canvas>
+<canvas id="12" onclick="drawing(this)" class="square borderR borderT borderL" height="200px" width="200px"></canvas>
+<canvas id="22" onclick="drawing(this)" class="square borderL borderT" height="200px" width="200px"></canvas>
+</div>
+
+<div id="message"> 
+  <h2>Choose your side</h2>
+  <button class="button" onclick="user(this.innerHTML)">O</button>
+  <button class="button" onclick="user(this.innerHTML)">X</button>
+</div>
+<script type="text/javascript" src="ticTacDoh.js"></script>
+  </body>
+  </html>
